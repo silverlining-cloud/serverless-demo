@@ -15,7 +15,7 @@ def run_script(driver, event):
         end_time = time.time()
         load_time_product = end_time - start_time
         
-        # Return Screenshot URLs
+        # Return loading times
         return_dict = {
             "load_time_homepage": load_time_homepage,
             "load_time_product": load_time_product
