@@ -2,9 +2,6 @@ from app import take_screenshot
 
 def run_script(driver, event):
     try:
-        # Pass body parameter 'browser_size' (e.g. '1440x900') in API call
-        driver.set_window_size(event["browser_size"])
-        
         # Navigate to bot.silverlining.cloud
         driver.get("https://bot.silverlining.cloud")
 
