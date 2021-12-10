@@ -6,8 +6,8 @@ def run_script(driver, event):
         driver.get("https://bot.silverlining.cloud")
 
         # Scroll down to browser size frame
-        #element = driver.find_element_by_xpath("//div[@id='size']")
-        #driver.execute_script("arguments[0].scrollIntoView(true);", element)
+        element = driver.find_element_by_xpath("//div[@id='size']")
+        driver.execute_script("arguments[0].scrollIntoView(true);", element)
 
         # Take first screenshot
         screenshot_url1 = take_screenshot(driver)
