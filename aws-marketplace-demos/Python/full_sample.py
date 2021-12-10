@@ -10,7 +10,8 @@ def run_script(driver, event):
         driver.execute_script("arguments[0].scrollIntoView(true);", element)
 
         # Take first screenshot
-        screenshot_url1 = take_screenshot(driver)
+        #screenshot_url1 = take_screenshot(driver)
+        screenshot_url1 = ""
 
         # Click on 'Visit SilverLining.cloud'
         driver.find_element_by_xpath("//a[@id='visit']").click()
